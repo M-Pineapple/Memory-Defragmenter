@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definitions -->
+  <defs>
+    <!-- Blue to purple gradient matching the screenshot -->
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5B9EFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A078EA;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Subtle shadow -->
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="10" stdDeviation="20" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Background with rounded corners -->
+  <rect width="1024" height="1024" rx="230" fill="url(#backgroundGradient)"/>
+  
+  <!-- Memory chip icon -->
+  <g id="memoryChip" transform="translate(512, 512)">
+    <!-- Main chip body -->
+    <rect x="-180" y="-120" width="360" height="240" rx="20" 
+          fill="white" 
+          fill-opacity="1"
+          filter="url(#shadow)"/>
+    
+    <!-- Top pins -->
+    <g id="topPins">
+      <rect x="-140" y="-170" width="30" height="50" rx="15" fill="white"/>
+      <rect x="-90" y="-170" width="30" height="50" rx="15" fill="white"/>
+      <rect x="-40" y="-170" width="30" height="50" rx="15" fill="white"/>
+      <rect x="10" y="-170" width="30" height="50" rx="15" fill="white"/>
+      <rect x="60" y="-170" width="30" height="50" rx="15" fill="white"/>
+      <rect x="110" y="-170" width="30" height="50" rx="15" fill="white"/>
+    </g>
+    
+    <!-- Bottom pins -->
+    <g id="bottomPins">
+      <rect x="-140" y="120" width="30" height="50" rx="15" fill="white"/>
+      <rect x="-90" y="120" width="30" height="50" rx="15" fill="white"/>
+      <rect x="-40" y="120" width="30" height="50" rx="15" fill="white"/>
+      <rect x="10" y="120" width="30" height="50" rx="15" fill="white"/>
+      <rect x="60" y="120" width="30" height="50" rx="15" fill="white"/>
+      <rect x="110" y="120" width="30" height="50" rx="15" fill="white"/>
+    </g>
+    
+    <!-- Left pins -->
+    <g id="leftPins">
+      <rect x="-230" y="-80" width="50" height="30" rx="15" fill="white"/>
+      <rect x="-230" y="-30" width="50" height="30" rx="15" fill="white"/>
+      <rect x="-230" y="20" width="50" height="30" rx="15" fill="white"/>
+      <rect x="-230" y="70" width="50" height="30" rx="15" fill="white"/>
+    </g>
+    
+    <!-- Right pins -->
+    <g id="rightPins">
+      <rect x="180" y="-80" width="50" height="30" rx="15" fill="white"/>
+      <rect x="180" y="-30" width="50" height="30" rx="15" fill="white"/>
+      <rect x="180" y="20" width="50" height="30" rx="15" fill="white"/>
+      <rect x="180" y="70" width="50" height="30" rx="15" fill="white"/>
+    </g>
+  </g>
+</svg>

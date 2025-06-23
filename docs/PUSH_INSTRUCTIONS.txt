@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Run this from your terminal to push changes:
+# cd "/Users/rogers/GitHub/Memory Defragmenter"
+# chmod +x push_to_github.sh
+# ./push_to_github.sh
+
+# Or run directly:
+# git push origin main

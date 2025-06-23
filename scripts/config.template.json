@@ -1,0 +1,27 @@
+{
+  "defragmenter": {
+    "version": "1.0.0",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "thresholds": {
+      "exact_duplicate": 0.95,
+      "near_duplicate": 0.85,
+      "related": 0.70
+    },
+    "safety": {
+      "require_backup": true,
+      "max_auto_merge": 10,
+      "preview_required": true,
+      "archive_before_delete": true
+    },
+    "performance": {
+      "batch_size": 100,
+      "max_memory_mb": 512,
+      "parallel_threads": 4
+    },
+    "ui": {
+      "show_performance_overlay": false,
+      "default_theme": "auto",
+      "enable_animations": true
+    }
+  }
+}
